@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+ 
+
+    <style>
+    /* Reset--------------------------------------- */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+/* Container styles-------------------------- */
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #644965, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#container{
+    width: 80%;
+    height: 70%;
+    /* background-color: #644965; */
+     background-image: linear-gradient(to right, #b182b3 10%, #00000000), url(images/LOGO.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    /* padding:10%; */
+    padding-top: 10px;
+    padding-left: 10px;
+
+    
+}
+form{
+    height: 400px;
+    width: 400px;
+    background-color: aliceblue;
+    padding: 200px;
+     /* margin-left: auto;
+    margin-right: auto; */
+    
+}
+.formitems{
+    background-color: #644965;
+    height: 200px;
+    width: 100px;
+   
+}
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <form target="_self">
+
+        <div id="user_name" class="form_items">
+        <!-- <label for="user_name">Enter your name</label> -->
+        <input id="user_n" placeholder="Name" type="text">
+    </div>
+    <div id="user_email class="form_items"">
+        <!-- <label for="youremail">Enter your email</label> -->
+        <input id="user_e" type="email" placeholder="Email" required>
+    </div>
+    <div id="natice" class="form_items">
+        
+        <textarea name="" id="note" placeholder=" Note"></textarea>
+
+    </div>
+
+    <div>
+        <button type="submit">supmit</button>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
